@@ -7,6 +7,7 @@ var MongoClient = require("mongodb").MongoClient;
 app.use(bodyParser.json());
 const mongoose = require("mongoose");
 app.use(bodyParser.urlencoded({ extended: true }));
+const path = require("path");
 var dbUrl =
   "mongodb+srv://Akshat_Verma:akshat1234@cluster0.d4yimus.mongodb.net/";
 var dbName = "ecommerce";
@@ -46,11 +47,14 @@ MongoClient.connect(dbUrl, function (err, client) {
 //   res.json({ version: version, newversionavaible: condition });
 // });
 
-app.get("/register", function (req, res) {
-  res.sendFile(__dirname + "/index.html");
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "/index.html"));
   // console.log("web page");
 });
-
+app.get("/login.html", function (req, res) {
+  res.sendFile(path.join(__dirname, "/login.html"));
+  // console.log("web page");
+});
 // API FOR THE REGISTER///...
 app.post("/register", (req, res) => {
   var name = req.body.name; //GET THE DATA FROM BODY
@@ -101,16 +105,16 @@ app.post("/register", (req, res) => {
       }
     });
 
-  res.json({
-    email: email,
-    name: name,
-    register: true,
-    msg: "Register sucessfull",
-  });
+  res.redirect("/otpverify");
 });
 // API FOR THE REGISTER///...
 
 //API FOR THE OTP CHECKER///...
+app.get("/otpverify", function (req, res) {
+  res.sendFile(__dirname + "/otp.html");
+  // console.log("web page");
+});
+
 app.post("/otpverify", (req, res) => {
   var email = req.body.email;
   var otp = req.body.otp;
@@ -136,9 +140,9 @@ app.post("/otpverify", (req, res) => {
           } else {
           }
         });
-        res.json({ email: email, otpverify: true, msg: "login sucessfull" });
+        res.send("<h1>user verified<h1>");
       } else {
-        res.json({ email: email, otpverify: false, msg: "login failed" });
+        res.send("<h1>user enter the wrong otp<h1>");
       }
     });
 });

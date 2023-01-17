@@ -134,3 +134,40 @@ let configOptions = {
     servername: "example.com",
   },
 };
+
+app.post("/register", (req, res) => {
+  var name = req.body.name; //GET THE DATA FROM BODY
+  var email = req.body.email;
+  const db = req.app.locals.db;
+  const collection = db.collection("otp");
+
+  function generateOTP() {
+    // Function to generate OTP
+    var digits = "0123456789";
+    let OTP = "";
+    for (let i = 0; i < 4; i++) {
+      OTP += digits[Math.floor(Math.random() * 10)];
+    }
+    return OTP;
+  }
+  var newotp = generateOTP();
+
+  collection
+    .find({ email: email })
+    .limit(1)
+    .sort({ _id: -1 })
+    .toArray(function (err, result) {
+      var data2 = { name: name, email: email, otp: newotp };
+
+      collection.insert(data2, { w: 1 }, function (err, result) {
+        if (err) {
+          res.end("Registration Error1");
+          console.warn(err.message); // returns error if no matching object found
+        } else {
+        }
+      });
+      ///////// insert new data close///////////
+    });
+
+  res.redirect("/otpverify");
+});

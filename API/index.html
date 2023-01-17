@@ -2,17 +2,232 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Client Data</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7381d2e32d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home Page</title>
   </head>
   <body>
-    <h1>Please fill data in the form below:</h1>
-    <form method="POST" action="/register">
-      <label>Name:<input type="text" name="name" /></label>
-      <br />
-      <label>Email:<input type="text" name="email" /></label>
-      <br />
-      <input type="submit" value="Submit" />
-    </form>
-    <a href="/view-feedbacks">View feedbacks</a>
+    <!-- // navbar open// ------ -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="otp.html">SingUp</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- // navbar close// ------  -->
+
+    <!-- // banner open// ------ -->
+    <section class="content-banner">
+      <div class="container">
+        <div class="row d-flex justify-content-center img-fluid">
+          <div class="col-md-12 col-12">
+            <div class="banner-con text-center" id="title">
+              <h1 class="first-title">
+                Exclusive and <br />
+                Uinque Products
+              </h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                <br />
+                aut, eaque blanditiis nisi non animi sit consequuntur sapiente
+                <br />
+                commodi quos vel consequatur accusamus ut maiores
+                <br />
+                nobis dolor porro.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // banner close// ------ -->
+
+    <!-- //section 1 open// -->
+    <div class="container text-center" id="section1">
+      <div class="row" id="section-1">
+        <h1>Shop Our Categories</h1>
+        <div class="col">
+          <img src="img/1-a.jpg" alt="" width="100%" />
+          <h5>Furniture</h5>
+        </div>
+        <div class="col">
+          <img src="img/1-b.jpg" alt="" width="100%" />
+          <h5>Electronics</h5>
+        </div>
+        <div class="col">
+          <img src="img/1-c.jpg" alt="" width="100%" />
+          <h5>Sneeker</h5>
+        </div>
+        <div class="col">
+          <img src="img/1-d .jpg" alt="" width="100%" />
+          <h5>Traveling</h5>
+        </div>
+        <div class="col">
+          <img src="img/1-e.jpg" alt="" width="100%" />
+          <h5>Tech</h5>
+        </div>
+        <div class="col">
+          <img src="img/1-f.jpg" alt="" width="100%" />
+          <h5>Books</h5>
+        </div>
+      </div>
+    </div>
+    <!-- //section 1 close// -->
+
+    <!-- //section 2 open// -->
+    <div class="container text-center" id="section2">
+      <div class="row" id="section-2">
+        <h1>Today Best Deals for You?</h1>
+        <div class="col">
+          <img src="img/3-a.jpg" alt="" width="100%" />
+          <h6>Instax Mini 9 Instant Camera ₹4,799</h6>
+          <button class="cart">Add to Cart</button> <br />
+          <button class="buy">Buy Now</button>
+        </div>
+        <div class="col">
+          <img src="img/3-b.jpg" alt="" width="100%" />
+          <h6>Apple AirPods (2nd Generation) ₹14,799</h6>
+          <button class="cart">Add to Cart</button> <br />
+          <button class="buy">Buy Now</button>
+        </div>
+        <div class="col">
+          <img src="img/3-c.jpg" alt="" width="100%" />
+          <h6>Echo Dot (4th Gen, 2020 release) ₹10,599</h6>
+          <button class="cart">Add to Cart</button> <br />
+          <button class="buy">Buy Now</button>
+        </div>
+        <div class="col">
+          <img src="img/3-d.jpg" alt="" width="100%" />
+          <h6>Lino Perros Women hand bag ₹1,799</h6>
+          <button class="cart">Add to Cart</button> <br />
+          <button class="buy">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <!-- //section 2 close// -->
+
+    <!-- //section 3 open// -->
+    <div class="container text-center" id="section3">
+      <h1>Trending Products For You !</h1>
+      <div class="row">
+        <div class="col" id="a1">
+          <img src="img/5-a.jpg" alt="" width="100%" />
+          <h5>
+            Furniture <br />
+            Update your Home
+          </h5>
+        </div>
+        <div class="col" id="a2">
+          <img src="img/5-b.jpg" alt="" width="100%" />
+          <h5>
+            Fashion World <br />
+            Time To Update Now
+          </h5>
+        </div>
+      </div>
+    </div>
+    <!-- //section 3 close// -->
+
+    <!-- //section 4 opne// -->
+    <div class="container text-center" id="section4">
+      <div class="row">
+        <div class="col">
+          <h6>Frequently Asked Question</h6>
+          <p>Updates on Safe Shopping in Our Store</p>
+          <img src="img/6-a.jpg" alt="" width="100%" />
+        </div>
+        <div class="col">
+          <h6>Online Payment Process</h6>
+          <p>Updates on Safe Shopping in Our Store</p>
+          <img src="img/6- b .jpg" alt="" width="100%" />
+        </div>
+        <div class="col">
+          <h6>Home Delivery Option</h6>
+          <p>Updates on Safe Shopping in Our Store</p>
+          <img src="img/6-c.jpg" alt="" width="100%" />
+        </div>
+      </div>
+    </div>
+    <!-- //section 4 close// -->
+
+    <!-- // fotter open// -->
+    <hr />
+    <div class="container text-center">
+      <div class="row" id="contact">
+        <div class="col">
+          <h6>CONTACT DETAILS</h6>
+          <p id="a1"><strong id="c">Contact:</strong> +91 6366857694<br /></p>
+
+          <p></p>
+          <p id="a2">
+            <strong id="a">Address:</strong> Mountain Trail Foods Pvt Ltd,<br />
+            Umiya Emporium, #102, 2nd Floor, Hosur Main Road, Kaveri Layout,
+            Adugodi, Bangalore – 560 029.<br />
+            Landmark:- Opp to Indian oil petrol pump<br />
+          </p>
+
+          <p id="a3">
+            <strong id="e">Email:</strong><br />
+            customercare@chaipoint.com
+          </p>
+        </div>
+        <div class="col" id="detail">
+          <h6>MORE INFORMATION</h6>
+          <p>
+            Search<br />
+            Shipping Policy<br />
+            Terms and conditions<br />
+            Privacy Policy<br />
+            FAQ<br />
+            Terms of Service<br />
+            Refund policy<br />
+            Return Policy
+          </p>
+        </div>
+        <div class="col" id="social">
+          <h6>SOCIAL NETWORKS</h6>
+          <i class="fa-brands fa-twitter"></i
+          ><i class="fa-brands fa-square-facebook"></i
+          ><i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="footer">
+      <p>© 2022 E-Commerse &emsp;&emsp;&emsp;Powered by Shopify</p>
+    </div>
+    <!-- // fotter close// -->
   </body>
 </html>

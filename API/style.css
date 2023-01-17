@@ -1,0 +1,138 @@
+.content-banner {
+  color: #f0f0f0;
+  background-image: url(img/0.jpg);
+  min-height: 700px;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 125px;
+}
+
+.content-banner .first-title {
+  text-align: left;
+  /* padding-top: 10%; */
+  font-size: 50px;
+  color: black;
+}
+.content-banner p {
+  text-align: left;
+  color: black;
+}
+
+/* //section 1// */
+#section-1 {
+  margin-top: 160px;
+}
+#section1 h1 {
+  text-align: left;
+  padding-bottom: 50px;
+  font-weight: 400;
+}
+
+#section-1 h5 {
+  background-color: #cdd3d3;
+  padding: 10px;
+}
+
+/*//section 2// */
+#section2 {
+  margin-top: 150px;
+  margin-bottom: 100px ;
+}
+
+#section2 h1 {
+  text-align: left;
+  padding-bottom: 50px;
+  font-weight: 400;
+}
+
+.cart {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: -87px;
+  border-radius: 20px;
+  border-color: #ffd814;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #ffd814;
+}
+.buy {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: -87px;
+  border-radius: 20px;
+  padding-left: 45px;
+  padding-right: 42px;
+  background-color: #ffa41c;
+  border-color: #ffa41c;
+}
+
+#section2 h6 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* //section 3// */
+#section3 {
+  margin-top: 150px;
+}
+#section3 h1 {
+  text-align: left;
+}
+
+#a1,
+#a2 {
+  padding-top: 45px;
+}
+
+#a1 h5,
+#a2 h5 {
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  background-color: #cdd3d3;
+}
+/* //section 4//  */
+
+#section4 {
+  margin-top: 150px;
+  background-color: #cdd3d3;
+  padding-top: 20px;
+  margin-bottom: 200px;
+}
+
+#section4 h6,
+p {
+  text-align: left;
+  /* background-color: #cdd3d3; */
+}
+
+/* //fotter// */
+#contact {
+  padding-top: 50px;
+}
+
+#contact h6 {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+#contact p {
+  text-align: left;
+}
+
+#detail strong {
+  text-align: left;
+}
+
+.footer p {
+  font-size: 13px;
+  padding-left: 150px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+#social i {
+  float: left;
+  padding: 10px;
+}
