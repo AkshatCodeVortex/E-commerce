@@ -47,6 +47,8 @@ MongoClient.connect(dbUrl, function (err, client) {
 //   res.json({ version: version, newversionavaible: condition });
 // });
 
+const Staticpath = path.join(__dirname, "");
+app.use(express.static(Staticpath));
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "/index.html"));
   // console.log("web page");
